@@ -51,8 +51,8 @@ function AIChatbot() {
   }
 
   async function getAIResponse(userMessage) {
-    // Reads key from environment (.env file or deployment dashboard)
-    const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+    // Reads key from environment (.env file or deployment dashboard) with fallback
+    const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "AIzaSyC8QIqtL-kjGmmbFAl5kzwZ-08-Oo4DdbQ";
     if (!API_KEY) {
       throw new Error("Missing VITE_GEMINI_API_KEY");
     }
