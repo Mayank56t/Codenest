@@ -1,0 +1,25 @@
+# Environment files and credentials
+.env
+.env.*
+*.env
+*.local
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.log
+
+# Java / Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+*.class
+
+# IDE and OS
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+Thumbs.db
